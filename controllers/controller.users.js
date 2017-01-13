@@ -1,6 +1,6 @@
 var User = require('../models/model.users');
 var bcrypt = require('bcryptjs')
-var Movie = require('../scripts/getMovie');
+var movieArray = require('../scripts/getMovie');
 
 module.exports = {
 
@@ -62,7 +62,7 @@ module.exports = {
 
     findMovies: (req, res) => {
 
-      Movie.find({}, (err, movies) => {
+      movieArray.find({}, (err, movies) => {
         if (err) {
           console.log('Could not find movies!')
           return res.send(err)
@@ -73,7 +73,7 @@ module.exports = {
     }
     findOne: (req, res) => {
 
-      Movie.findOne({}, (err, movie) => {
+      movieArray.findOne({}, (err, movie) => {
         if (err) {
           console.log('Could not find movie!')
           return res.send(err)
