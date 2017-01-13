@@ -66,7 +66,8 @@ var movieArray = [
   genres: 'Horror, Thriller',
   director: 'Steve Miner',
   writer: 'Martin Kitrosser (screenplay), Carol Watson (screenplay), Victor Miller (character creator), Ron Kurz (character creator)',
-  actors: 'Terry Ballard, Richard Brooker, Gloria Charles, Anne Gaybis',  plot: 'Jason Voorhees, having barely survived a wound to his shoulder from his own machete, is back to revenge on all that visit "his" woods. A new group of friends come over to party at an area close to the campsite. This time, Jason will be stronger than ever, and getting a hockey mask from one of those friends.',
+  actors: 'Terry Ballard, Richard Brooker, Gloria Charles, Anne Gaybis',
+  plot: 'Jason Voorhees, having barely survived a wound to his shoulder from his own machete, is back to revenge on all that visit "his" woods. A new group of friends come over to party at an area close to the campsite. This time, Jason will be stronger than ever, and getting a hockey mask from one of those friends.',
   languages: 'English',
   country: 'USA',
   awards: '2 nominations.',
@@ -286,7 +287,32 @@ var movieArray = [
   type: 'movie',
   response: 'True',
   series: false,
-  imdburl: 'https://www.imdb.com/title/tt0329101' }
+  imdburl: 'https://www.imdb.com/title/tt0329101' },
+  
+  
+  {
+  title: 'Friday the 13th Remake',
+  _year_data: '2009',
+  year: 2009,
+  rated: 'R',
+  released: '2009-02-13T05:00:00.000Z',
+  runtime: '97 min',
+  genres: 'Horror',
+  director: 'Marcus Nispel',
+  writer: 'Damian Shannon (screenplay), Mark Swift (screenplay), Damian Shannon (story), Mark Swift (story), Mark Wheaton (story), Victor Miller (characters)',
+  actors: 'Jared Padalecki, Danielle Panabaker, Amanda Righetti, Travis Van Winkle', 
+  plot: 'A group of young adults set up tent near the abandoned summer camp where a series of gruesome murders are said to have taken place back in 1980. The perpetrator was a grieving mother, driven insane by the drowning of her child, Jason, whom she believed was neglected by the camp counselors. As legend has it, the last survivor of the attacks beheaded the woman. But then Jason came back, and now he is a vengeful and inexorable killer, wielding crossbows, swords, axes and other sharp instruments. The legend proves horribly true, as these campers quickly discover. Six months later, the brother of one of those campers distributes posters of his missing sister. The police believe she took off with her boyfriend; but he knows better. The brother crosses paths with an uptight young rich guy who is having his girlfriend and friends over at his parents\' cabin. The brother ends up at the cabin himself just before his sister\'s attacker sets upon them all.',
+  languages: 'English, Ukrainian',
+  country: 'USA',
+  awards: '2 wins & 4 nominations.',  poster: 'https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5ODI5NTMzN15BMl5BanBnXkFtZTcwNzY4MTYxMg@@._V1_SX300.jpg',
+  metascore: '34',
+  rating: '5.6',
+  votes: '76,902',
+  imdbid: 'tt0758746',
+  type: 'movie',
+  response: 'True',
+  series: false,
+  imdburl: 'https://www.imdb.com/title/tt0758746' }
 ];
 
 movieArray.forEach((movieObj)=>{
@@ -298,6 +324,8 @@ movieArray.forEach((movieObj)=>{
   });
   
 });
+
+// logs to grab movies
 
 // imdb.getReq({name : "Friday the 13th"}).then(console.log));
 
@@ -320,3 +348,5 @@ movieArray.forEach((movieObj)=>{
 // imdb.getReq({name : "Jason X"}).then(console.log);
 
 // imdb.getReq({name : "Freddy vs. Jason"}).then(console.log);
+
+// imdb.getById('tt0758746').then(console.log)

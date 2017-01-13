@@ -17,21 +17,7 @@
     "imdb-api": "^2.2.1",
     "mongodb": "^2.2.21",
     "mongoose": "^4.7.6",
-    "morgan": "^1.7.0"
-  }
-}
-<<<<<<< HEAD
-{
-  "name": "grayscale",
-  "title": "Grayscale",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/grayscale",
-  "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
-  },
-  "devDependencies": {
+    "morgan": "^1.7.0",
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
     "font-awesome": "^4.6.3",
@@ -42,11 +28,5 @@
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^1.5.4",
     "jquery": "^1.11.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
   }
 }
-=======
->>>>>>> a917827814b09dd1ec900adbada7ecaaec3b8ddf
