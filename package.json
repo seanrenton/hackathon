@@ -9,12 +9,14 @@
   "author": "jiminikiz",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.3.0",
+    "bcryptjs": "^2.4.0",
     "body-parser": "^1.15.2",
     "client-sessions": "^0.7.0",
     "colors": "^1.1.2",
     "express": "^4.14.0",
-    "mongoose": "^4.5.9",
+    "imdb-api": "^2.2.1",
+    "mongodb": "^2.2.21",
+    "mongoose": "^4.7.6",
     "morgan": "^1.7.0"
   }
 }
