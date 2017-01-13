@@ -1,12 +1,26 @@
-var Auth = require('./controllers.users'),
+var Users = require('./controllers.users'),
     express = require('express');
+    User = require('./models/models.users')
 
     module.exports = (app) => {
-        app.get('/logout', Auth.logout);
+        
+        app.get('/logout', (req, res)=> {
+            req.session.reset();
 
-        app.post('/login', Auth.login);
+            res.redirect('/')
+        });
+        app.get('/api/me', (req, res)=>{
+            User.findOne({_id : req.session.userID},
+            (err, user)=>{
+                res.send(user)
+            })
+        })
 
-        app.post('/register', Auth.register);
+        app.get('/api/movies', Middleware.isLoggedIn, Users.get)
+
+        app.post('/index', Users.login);
+
+        app.post('/index', Users.create);
 
         app.use(express.static('public'));
     };

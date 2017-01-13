@@ -10,6 +10,7 @@ var User = mongoose.schema({
   ratings : {type : Object},
   
   dateJoined : {type : Number, default : ()=>{return Date.now()}}
+
 });
 
 
