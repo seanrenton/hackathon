@@ -319,5 +319,4 @@ movieArray.forEach((movieObj)=>{
 
 // imdb.getReq({name : "Jason X"}).then(console.log);
 
-imdb.getReq({name : "Freddy vs. Jason"}).then(console.log);
-
+// imdb.getReq({name : "Freddy vs. Jason"}).then(console.log);
