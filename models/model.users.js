@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bycryptjs')
 
+mongoose.connect('mongodb://localhost/friday13th');
+
 var User = mongoose.schema({
   email : {type : String, required : true, unique : true},
   pass : {type : String, required : true},

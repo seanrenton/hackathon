@@ -1,9 +1,11 @@
 var mongoose = require('mongoose');
 
-
+mongoose.connect('mongodb://localhost/friday13th');
 
 var MovieApp= mongoose.Schema({
-  movie : {type : Object}
+  movie : {type : Object},
+  rating : Number,
+  watched : Boolean
 })
 
 

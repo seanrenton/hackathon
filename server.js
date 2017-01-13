@@ -1,7 +1,7 @@
 var express = require('express'),
     bodyParser = require('body-parser'),
     loggers = require('morgan')('dev'),
-    mongoose = require('mongoose').connect('mongodb://localhost/authentication', (mongooseErr) => {
+    mongoose = require('mongoose').connect('mongodb://localhost/friday13th', (mongooseErr) => {
         if( mongooseErr ) {
             console.error('#ERROR')
         } else {
